@@ -1,0 +1,152 @@
+#root {
+  margin: 0 auto;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+nav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  justify-content: space-around;
+  top: 0;
+  background: none;
+  backdrop-filter: blur(20px);
+  align-items: center;
+  height: min-content;
+  z-index: 10;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  font-size: small;
+  margin-top: 100px;
+  width: 100%;
+}
+header section:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 60%;
+  gap: -200px;
+  animation: fadeIn 0.4s;
+}
+header h1{
+  font-size: 4rem;
+  font-weight: 800;
+  width: 80%;
+  margin-right: -100px;
+}
+header h4{
+  font-family: 'MuseoModerno', sans-serif;
+  
+}
+header section:nth-child(1) img{
+  width: 20rem;
+  margin-left: -100px;
+  padding-right: 50px;
+}
+header section:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.4s;
+}
+header section:nth-child(2) article{
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(20px);
+  background: rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 10rem;
+
+}
+header section:nth-child(2) article div{
+  padding: 10px;
+  align-items: center;
+}
+header section:nth-child(2) article img{
+  width: 8rem;
+}
+header section:nth-child(2) article div p{
+  font-size: smaller;
+  color: rgb(175, 174, 174);
+}
+
+.nav_zone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.nav_zone section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.nav_zone section div{
+  padding: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.nav_zone h2 div{
+  background: white;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60%;
+  margin-top: 2px;
+}
+@keyframes fadeIn{
+  0%{
+    margin-left: -100%;
+  }
+  100%{
+    margin-left: 0;
+  }
+}
