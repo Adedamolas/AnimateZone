@@ -3,6 +3,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa6";
+import { FaReact } from 'react-icons/fa6';
 function Technologies() {
     return(
         <section className="mb-32 flex flex-col w-full place-items-center space-y-10">
@@ -31,7 +32,7 @@ function Technologies() {
                     <h2 className="text text-medium">Bootstrap</h2>
                 </article>
                 <article className="bg-darkblue backdrop-blur-sm p-5 rounded-lg cursor-pointer flex flex-row align-middle justify-center border-2 border-transparent hover:border-2 hover:border-darkblue hover:bg-transparent w-72"> 
-                    <i className="p-2 py-2 text-medium"><FaBootstrap /></i>
+                    <i className="p-2 py-2 text-medium"><FaReact /></i>
                     <h2 className="text text-medium">ReactJS</h2>
                 </article>
             </section>
