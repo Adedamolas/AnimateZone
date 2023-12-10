@@ -7,7 +7,7 @@ function About(){
             <div className="heading flex flex-col align-top justify-start">
                 <h2>About me</h2>
             </div>
-            <section className='about flex lg:flex-row sm:flex-col w-full space-x-10 align-middle justify-center sm:gap-10 sm:place-items-center w- w-full'>
+            <section className='about flex lg:flex-row sm:flex-col space-x-10 align-middle justify-center sm:gap-10 sm:place-items-center w- w-full'>
                 <div className='w-full place-items-center flex flex-row justify-center align-middle'>
                     <article className='img_div flex flex-col justify-center align-top p-2 rotate-12 over overflow-visible bg-darkblue w-60  rounded-3xl sm:w-max place-items-center'>
                         <img className='bg-slate-100 bg-darkbg rounded-3xl' width={'250px'} src={img} alt="" />
