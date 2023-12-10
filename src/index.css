@@ -101,6 +101,10 @@ button:focus-visible {
     background: radial-gradient(circle, #144a76 0%, #011223 100%);
 
   }
+  article{
+    margin: 0;
+    margin-left: 0;
+  }
   button{
     border-radius: 8px;
     border: 1px solid white;

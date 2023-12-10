@@ -10,8 +10,8 @@ function Zone(){
 
     return(
         <>
-            <header className='flex flex-row justify-around z-20 bg-none px-20 space-x-10'>
-                <div className="flex flex-col py-20 space-y-5">
+            <header className='flex flex-row justify-center z-20 bg-none px-20 space-x-10'>
+                <div className="flex flex-col py-20 space-y-5 sm:text-center lg:text-left">
                     <h1 className='md-10'>Hi,</h1>
                     <h1>I'm James Adedamola</h1>
                     <h1>A Frontend Developer</h1>
@@ -22,11 +22,6 @@ function Zone(){
                         <button>Hire me</button>
                     </div>
                 </div>
-                <section className='flex flex-col'>
-                    {/* <article className='bg-darkblue p-7 rounded-2xl rotate-12 h h-min'>
-                        <img className='bg-slate-100' width={'350px'} src={img} alt="" />
-                    </article> */}
-                </section>
             </header>
             <article className='flex flex-col absolute top-40 left-10 gap-10 place-items-center'>
                 <FaWhatsapp />

@@ -29,7 +29,8 @@ export default {
       width: {
         full: "100%",
         half: "50%",
-        quart: "75%"
+        quart: "75%",
+        nine: "90%"
       },
       maxWidth: {
         cardWidth: '10rem',
