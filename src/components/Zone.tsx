@@ -1,115 +1,40 @@
-import headerImg from '../assets/header_img 2.png'
-import headerImg2 from '../assets/header_img 3.png'
-import cardImg from '../assets/headerimg 2.png'
 import '../index.css'
-import { useState } from 'react'
+import '../App.css'
+import resume from '../my_resume.pdf'
+import { FaWhatsapp } from "react-icons/fa6"
+import { FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 function Zone(){
 
-const Adventure = () => {
-    return(
-        <>
-                <section>
-                    <article>
-                        <h3>INTRODUCING</h3>
 
-                        <h1>
-                            ADVENTURE ZONE
-                        </h1>
-                        <h4>
-                            Dive into the world of adventures
-                            and enjoy thrills and mystery
-                        </h4>
-                        <p>
-                            This zone is filled with stories of adventure talse
-                            which knows no bounds.
-                        </p>
-                    </article>
-                    <article>
-                        <img src={headerImg} alt="" />
-                    </article>
-                </section>
-                <section>
-                    <article>
-                        <img src={headerImg} alt="" />
-                        <div>
-                            <button>
-                                Case Study
-                            </button>
-                            <p className='flex font-light'>
-                                Check out our latest chapter
-                            </p>
-                        </div>
-                    </article>
-                </section>
-        </>
-    )
-}
-const Fantasy = () => {
     return(
         <>
-                <section>
-                    <article>
-                        <h3>INTRODUCING</h3>
-
-                        <h1>
-                            EXTRA-TERRESTRIAL ZONE
-                        </h1>
-                        <h4>
-                            We are not alone in the Universe, and you know it.
-                        </h4>
-                        <p>
-                            This zone is filled with stories of life-forms not from this
-                            world or Earth. Get ready for a bumpy ride.
-                        </p>
-                    </article>
-                    <article>
-                        <img src={headerImg2} alt="" />
-                    </article>
+            <header className='flex flex-row justify-around z-20 bg-none px-20 space-x-10'>
+                <div className="flex flex-col py-20 space-y-5">
+                    <h1 className='md-10'>Hi,</h1>
+                    <h1>I'm James Adedamola</h1>
+                    <h1>A Frontend Developer</h1>
+                    <div className='flex flex-row space-x-10'>
+                        <a href="my_resume.pdf" download={resume}>
+                            <button>Download CV</button>
+                        </a>
+                        <button>Hire me</button>
+                    </div>
+                </div>
+                <section className='flex flex-col'>
+                    {/* <article className='bg-darkblue p-7 rounded-2xl rotate-12 h h-min'>
+                        <img className='bg-slate-100' width={'350px'} src={img} alt="" />
+                    </article> */}
                 </section>
-                <section>
-                    <article>
-                        <img src={cardImg} alt="" />
-                        <div>
-                            <button>
-                                Case Study
-                            </button>
-                            <p className='flex font-light'>
-                                Check out our latest chapter
-                            </p>
-                        </div>
-                    </article>
-                </section>
-        </>
-    )
-}
-const components = [
-    <Adventure />,
-    <Fantasy />
-]
-const [activeZone, setActiveZone] = useState(0)
-const handleButtonClick = () => {
-    // Cycle to the next component
-    setActiveZone((prevIndex) =>
-      prevIndex === components.length + 1 ? 0 : prevIndex + 1
-    );
-  };
-  const handlePreviousButton = () => {
-    setActiveZone((prevIndex) =>
-    prevIndex === components.length - 1 ? 0 : prevIndex - 1
-  );
-  }
-    return(
-        <>
-            <header className='fles flex-column w-1/2'>
-                {components[activeZone]}
             </header>
-            <div className="nav_zone">
-                <h2>EXPLORE <div></div></h2>
-                <section>
-                    <div onClick={handlePreviousButton}></div>
-                    <div onClick={handleButtonClick}></div>
-                </section>
-            </div>
+            <article className='flex flex-col absolute top-40 left-10 gap-10 place-items-center'>
+                <FaWhatsapp />
+                <FaTwitter />
+                <FaLinkedin />
+                <FaInstagram />
+                <div className='bg-white w-1 h-10'></div>
+            </article>
         </>
     )
 }

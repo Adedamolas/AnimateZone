@@ -1,30 +1,37 @@
 import React from "react"
+import { AiOutlineHome } from "react-icons/ai";
+import { LuUser } from "react-icons/lu";
+import { IoIosTimer } from "react-icons/io";
+import { BsTools } from "react-icons/bs";
+import { RiServiceLine } from "react-icons/ri";
+import { SiOpenproject } from "react-icons/si";
+import { GrContact } from "react-icons/gr";
 import '../App.css'
 function Navbar(){
 
 const navlinks = [
-"ABOUT US |",
-"STORIES |",
-"TECHNOLOGY",
+"Projects",
+"About",
+"Details",
 ]
-const headerlinks = navlinks.map((text) => (
-<li>
-    <span>
-        {text}
-    </span>
-</li>
+const navLinks2 = [
+    <i className=""><AiOutlineHome /> </i>,
+    <i className=""><LuUser /> </i>,
+    <i className=""><BsTools /> </i>,
+    <i className=""><RiServiceLine /></i>,
+    <i className=""><SiOpenproject /> </i>,
+    <i className=""><GrContact /></i>,
+]
+const headerlinks = navLinks2.map((span) => (
+    <li className="flex flex-row align-middle justify-center"> 
+        {span}
+    </li>
 ))
     return(
-        <nav className="font-sans flex flex-row justify-around fixed top-0 backdrop-blur-sm">
-            <h2>
-                AnimateZone
-            </h2>
-            <ul>
+        <nav className= "">
+            <ul className="">
                 {headerlinks}
             </ul>
-            <button>
-                START READING
-            </button>
         </nav>
     )
 }

@@ -91,10 +91,15 @@ button:focus-visible {
 
 @layer base {
   html {
+    font-family: 'Lexend', sans-serif;
     color: white;
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: monospace; */
+    /* font-family: 'Michroma', sans-serif; */
     background: rgb(128,0,128);
-    background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(43,0,128,1) 100%);
+    /* background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(43,0,128,1) 100%); */
+    /* background: radial-gradient(circle, #2f2f2f 0%, #111111 100%); */
+    background: radial-gradient(circle, #144a76 0%, #011223 100%);
+
   }
   button{
     border-radius: 8px;
@@ -107,5 +112,24 @@ button:focus-visible {
     background-color: transparent;
     cursor: pointer;
     transition: border-color 0.25s;
+  }
+  h1{
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  h2{
+    font-size: 2.2rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  h4{
+    font-size: 1rem;
+  }
+  h5{
+    font-size: 0.7rem;
+  }
+  p{
+    margin: 0;
   }
 }

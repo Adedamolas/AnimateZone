@@ -1,152 +1,76 @@
-#root {
-  margin: 0 auto;
+article{
+    transition: all 0.5s;
+    margin: 0px;
+    margin-left: 0px;
 }
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body{
+    font-family: 'Lexend', sans-serif;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+h1,h2,h3,h4,h5,p{
+    margin: 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-
 nav{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  position: fixed;
-  justify-content: space-around;
-  top: 0;
-  background: none;
-  backdrop-filter: blur(20px);
-  align-items: center;
-  height: min-content;
-  z-index: 10;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    place-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 24px;
+    z-index: 1;
+    /* background: #80808033; */
 }
 nav ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  gap: 10px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(128, 128, 128, 0.2);
+    padding: 10px;
+    border-radius: 34px;
+    backdrop-filter: blur(20px);
+    gap: 20px;
 }
-
-header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 10px;
-  font-size: small;
-  margin-top: 100px;
-  width: 100%;
+nav ul li i{
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
 }
-header section:nth-child(1){
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  width: 60%;
-  gap: -200px;
-  animation: fadeIn 0.4s;
+nav ul li i:hover{
+    background: black;
 }
-header h1{
-  font-size: 4rem;
-  font-weight: 800;
-  width: 80%;
-  margin-right: -100px;
+button{
+    transition: all 0.3s;
 }
-header h4{
-  font-family: 'MuseoModerno', sans-serif;
-  
+button:hover{
+    background: white;
+    color: rgba(43,0,128,1);
 }
-header section:nth-child(1) img{
-  width: 20rem;
-  margin-left: -100px;
-  padding-right: 50px;
+.about{
+    align-items: center;
+    justify-content: center;
 }
-header section:nth-child(2){
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 0.4s;
+/* .about div{
+    align-items: flex-start;
+    background: red;
+} */
+.about section{
+    align-items:flex-start;
+    justify-content: center;
 }
-header section:nth-child(2) article{
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  backdrop-filter: blur(20px);
-  background: rgb(0, 0, 0, 0.5);
-  padding: 10px;
-  width: 10rem;
-
+.about section h2{
+    font-size: 1.3rem;
 }
-header section:nth-child(2) article div{
-  padding: 10px;
-  align-items: center;
+/* .about section article:nth-child(1){
+    background: #80808033;
+} */
+@keyframes slideIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
-header section:nth-child(2) article img{
-  width: 8rem;
-}
-header section:nth-child(2) article div p{
-  font-size: smaller;
-  color: rgb(175, 174, 174);
-}
-
-.nav_zone{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
-}
-.nav_zone section{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-.nav_zone section div{
-  padding: 35px;
-  border: 1px solid white;
-  border-radius: 50%;
-}
-.nav_zone h2 div{
-  background: white;
-  border-radius: 5px;
-  padding: 3px;
-  width: 60%;
-  margin-top: 2px;
-}
-@keyframes fadeIn{
-  0%{
-    margin-left: -100%;
-  }
-  100%{
-    margin-left: 0;
-  }
+.img_div img{
+    transform:rotate(-10deg)
 }
