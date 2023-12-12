@@ -4,7 +4,9 @@ import { BsTools } from "react-icons/bs";
 import { RiServiceLine } from "react-icons/ri";
 import { SiOpenproject } from "react-icons/si";
 import { GrContact } from "react-icons/gr";
-import { Link, animateScroll as scroll } from 'react-scroll';
+// import { LinkHTMLAttributes } from "react";
+import {Link} from 'react-scroll'
+// import { Link, animateScroll as scroll } from 'react-scroll';
 import '../App.css'
 function Navbar(){
 
