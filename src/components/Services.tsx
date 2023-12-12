@@ -13,16 +13,16 @@ function Services(){
                         <h3>Website Development</h3>
                         <p>View more</p>
                     </article>
-                    <article className="p-10 bg-darktrans text-left py-16 rounded-lg space-y-4 max-h-62">
+                    <div className="p-10 bg-darktrans text-left py-16 rounded-lg space-y-4 max-h-62">
                         <i className="text-6xl"><SiOpenproject /></i>
                         <h3>Web Rebranding and Editing</h3>
                         <p>View more</p>
-                    </article>
-                    <article className="p-10 bg-darktrans text-left py-12 max-h-58 rounded-lg space-y-4 max-h-62 ">
+                    </div>
+                    <div className="p-10 bg-darktrans text-left py-12 max-h-58 rounded-lg space-y-4 max-h-62 ">
                         <i className="text-6xl"><SiOpenproject /></i>
                         <h3 className="w-half">Website and Platform Maintainance</h3>
                         <p>View more</p>
-                    </article>
+                    </div>
                 </section>
             </section>
         </>

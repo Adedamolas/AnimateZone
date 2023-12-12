@@ -34,8 +34,8 @@ function Projects(){
                 <h2>Projects</h2>
             </div>
             <section className="grid lg:grid-cols-3 sm:grid-cols-1 gap-10 place-items-center text-left space-x-10 px-24 m-0">
-                <article  className='flex flex-col gap-5  bg-darkblue p-5 rounded-2xl min-h-72'>
-                    <img height={'200px'} src= {earnestly} alt="" />
+                <article  className='flex flex-col gap-5  bg-darkblue p-5 rounded-2xl min-h-72 w-nine'>
+                    <img height={'200px'} src= {gadgets} alt="" />
                     <p className='text text-xl'>A Twitter engine Landing page</p>
                     <div className='flex flex-row gap-3'>
                         <button>Github</button>

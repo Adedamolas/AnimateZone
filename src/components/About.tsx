@@ -9,12 +9,12 @@ function About(){
             </div>
             <section className='about flex lg:flex-row sm:flex-col space-x-10 align-middle justify-center sm:gap-10 sm:place-items-center w- w-full'>
                 <div className='w-full place-items-center flex flex-row justify-center align-middle'>
-                    <article className='img_div flex flex-col justify-center align-top p-2 rotate-12 over overflow-visible bg-darkblue w-60  rounded-3xl sm:w-max place-items-center'>
+                    <article className='img_div flex flex-col justify-center align-top p-6 rotate-12 over overflow-visible bg-darkblue w-60  rounded-3xl sm:w-max place-items-center'>
                         <img className='bg-slate-100 bg-darkbg rounded-3xl' width={'250px'} src={img} alt="" />
                     </article>
                 </div>
-               <article className='flex flex-col w-full space-y-10'>
-                    <p className='w-nine text-center'>
+               <article className='flex flex-col w-full space-y-10 place-items-start text-left'>
+                    <p className='w-nine text-left'>
                         Hi, I'm James Adedamola, a skilled frontend Developer
                         who aims in building intuitive and user friendly web-apps
                         using the latest Technologies. I'm proficient in HTML, CSS, Javascript
