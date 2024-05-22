@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     colors: {
+      'red': '#ff0000',
       'blue': '#1fb6ff',
+      'black': '#000000',
       'white': '#ffffff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
@@ -20,6 +22,11 @@ export default {
       'darkblue': '#144a76',
       'transparent': 'transparent',
       'darktrans': '#80808033',
+      'redtrans': '#ff000080',
+      'offwhite': '#2f2f2f',
+      'notblack': "#111111",
+      'grey': '#bebbbb',
+      'greytrans': '#80808080'
     },
     fontFamily: {
       sans: ['Lexend', 'sans-serif'],
@@ -30,7 +37,8 @@ export default {
         full: "100%",
         half: "50%",
         quart: "75%",
-        nine: "90%"
+        nine: "90%",
+        min: '1px'
       },
       maxWidth: {
         cardWidth: '10rem',

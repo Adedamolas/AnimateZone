@@ -1,121 +1,40 @@
-/* :root {
-  font-family: 'Abril Fatface', serif;
-  font-family: 'Exo 2', sans-serif;
-  font-family: 'Lexend', sans-serif;
-  font-family: 'Michroma', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'MuseoModerno', sans-serif;
-  font-family: 'Orbitron', sans-serif;
-  font-family: 'Prompt', sans-serif;
-  font-family: 'Rajdhani', sans-serif;
-  font-family: 'Satisfy', cursive;
-  font-family: 'Slabo 27px', serif;
-  font-family: 'Space Mono', monospace;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background: rgb(128,0,128);
-background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(43,0,128,1) 100%);
-  background: rgb(115,103,255);
-  background: linear-gradient(90deg, rgba(115,103,255,1) 0%, rgba(128,0,128,1) 50%, rgba(128,0,128,1) 100%);
-  background: rgb(128,0,128);
-  background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(43,0,128,1) 100%);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  background: rgb(128,0,128);
-  background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(43,0,128,1) 100%);
-  background: rgb(128,0,128);
-  background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(43,0,128,1) 100%);
-  background: rgb(115,103,255);
-  background: linear-gradient(90deg, rgba(115,103,255,1) 0%, rgba(128,0,128,1) 50%, rgba(128,0,128,1) 100%);
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid white;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: transparent;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: 'Lexend', sans-serif;
-    color: white;
-    /* font-family: monospace; */
-    /* font-family: 'Michroma', sans-serif; */
-    background: rgb(128,0,128);
-    /* background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(43,0,128,1) 100%); */
-    /* background: radial-gradient(circle, #2f2f2f 0%, #111111 100%); */
-    background: radial-gradient(circle, #144a76 0%, #011223 100%);
-
+  body {
+    font-family: SpaceMono;
+    transition: all 1s;
   }
   article{
     margin: 0;
     margin-left: 0;
   }
+  @font-face {
+    font-family: Spacemono;
+    src: url(../public/fonts/SpaceMono-Regular.ttf);
+  }
+  @font-face {
+    font-family: Novasquare;
+    src: url(../public/fonts/Quantico-Regular.ttf);
+  }
   button{
     border-radius: 8px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 0.6em 1.2em;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: all 0.25s;
+  }
+  button:hover{
+    background: red;
+    color: white;
+    border-color: transparent;
   }
   h1{
     font-size: 4rem;
